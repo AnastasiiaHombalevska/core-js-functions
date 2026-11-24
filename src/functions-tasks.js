@@ -95,7 +95,7 @@ function getPolynom(...coefficients) {
     return null;
   }
 
-  return function (x) {
+  return (x) => {
     return coefficients.reduce(
       (result, coefficient) => result * x + coefficient,
       0
